@@ -11520,3 +11520,25 @@ html {
   background-color: #1a252f;
 }
 
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio-item {
+  position: relative;
+}
+
+.portfolio-item .portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-item-caption {
+  opacity: 1;
+}
